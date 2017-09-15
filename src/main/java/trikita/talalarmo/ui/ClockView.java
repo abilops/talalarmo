@@ -50,9 +50,9 @@ public class ClockView extends SeekBar {
 
         RectF rectf = new RectF(center - radius, center - radius, center + radius, center + radius);
         float a = (float) (getProgress() * 360 / getMax());
-        if (a == 0) {
+        /*if (a == 0) {
             a = 360;
-        }
+        }*/
         c.drawArc(rectf, a - 90, 360 - a, false, mPaint);
         mPaint.setColor(accentColor);
         c.drawArc(rectf, -90, a, false, mPaint);
